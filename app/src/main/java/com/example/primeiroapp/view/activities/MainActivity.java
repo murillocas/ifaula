@@ -1,15 +1,13 @@
-package com.example.primeiroapp;
+package com.example.primeiroapp.view.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.Editable;
 import android.view.View;
-import android.widget.*;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
+
+import com.example.primeiroapp.R;
 
 public class MainActivity extends AppCompatActivity {
     Button btnCadastro, btnVisualizar;

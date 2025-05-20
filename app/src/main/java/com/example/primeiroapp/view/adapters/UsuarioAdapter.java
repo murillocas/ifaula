@@ -1,4 +1,6 @@
-package com.example.primeiroapp.RecyclerViewGroup;
+package com.example.primeiroapp.view.adapters;
+
+
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,15 +10,18 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.primeiroapp.R;
-import com.example.primeiroapp.Usuario;
+import com.example.primeiroapp.listeners.OnUsuarioClickListener;
+import com.example.primeiroapp.model.Usuario;
 
 import java.util.List;
 
 public class UsuarioAdapter extends RecyclerView.Adapter<UsuarioViewHolder> {
     private List<Usuario> listaUsuarios;
+    private OnUsuarioClickListener listener;
 
-    public UsuarioAdapter(List<Usuario> listaUsuarios) {
+    public UsuarioAdapter(List<Usuario> listaUsuarios, OnUsuarioClickListener listener) {
         this.listaUsuarios = listaUsuarios;
+        this.listener = listener;
     }
 
     @NonNull
@@ -30,8 +35,7 @@ public class UsuarioAdapter extends RecyclerView.Adapter<UsuarioViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull UsuarioViewHolder holder, int position) {
         Usuario usuario = listaUsuarios.get(position);
-        holder.textViewNome.setText("Nome: " + usuario.getNome());
-        holder.textViewIdade.setText("Idade: " + usuario.getIdade());
+        holder.bind(usuario, listener);
     }
 
     @Override

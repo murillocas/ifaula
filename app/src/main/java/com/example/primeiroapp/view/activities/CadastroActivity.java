@@ -1,15 +1,16 @@
-package com.example.primeiroapp;
+package com.example.primeiroapp.view.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.lifecycle.ViewModelProvider;
-import androidx.lifecycle.ViewModelStoreOwner;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
+
+import com.example.primeiroapp.MeuApp;
+import com.example.primeiroapp.R;
+import com.example.primeiroapp.model.Usuario;
+import com.example.primeiroapp.viewmodel.UsuarioViewModel;
 
 public class CadastroActivity extends AppCompatActivity {
 

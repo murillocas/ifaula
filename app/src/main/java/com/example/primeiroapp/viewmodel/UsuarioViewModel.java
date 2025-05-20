@@ -1,10 +1,10 @@
-package com.example.primeiroapp;
+package com.example.primeiroapp.viewmodel;
 
 import android.app.Application;
 
-import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
-import androidx.lifecycle.MutableLiveData;
+
+import com.example.primeiroapp.model.Usuario;
 
 import java.util.ArrayList;
 import java.util.List;

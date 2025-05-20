@@ -11,13 +11,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PrimeiroApp">
         <activity
-            android:name=".ListaActivity"
+            android:name=".view.activities.ListaActivity"
             android:exported="true" />
         <activity
-            android:name=".CadastroActivity"
+            android:name=".view.activities.CadastroActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".view.activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

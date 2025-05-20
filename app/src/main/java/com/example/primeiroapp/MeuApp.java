@@ -2,6 +2,8 @@ package com.example.primeiroapp;
 
 import android.app.Application;
 
+import com.example.primeiroapp.viewmodel.UsuarioViewModel;
+
 public class MeuApp extends Application {
     private UsuarioViewModel usuarioViewModel;
 
